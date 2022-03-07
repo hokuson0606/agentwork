@@ -49,22 +49,48 @@ p {
   margin: 0 auto;
 }
 
+.list{
+  display: flex
+}
+
+.list:hover{
+  text-decoration: underline;
+  
+}
+
+.list::before{
+  content: url(img/一覧はこちら.png);
+  padding-right: 18px;
+  
+}
+
+.contents-title{
+  color: #33CB33;
+  align-items: center;
+  display: flex
+}
+
+/*header*/
+
 .header {
   padding: 36px 0 0;
 }
 
-.header-title {
+.header-title,
+.company-contents {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
 }
 
-.header-logo-img {
+.header-logo-img,
+.company-logo-img {
   width: 56px;
   height: 56px;
 }
 
-.header-logo {
+.header-logo,
+.company-logo {
   display: flex;
   align-items: center;
 }
@@ -74,7 +100,12 @@ p {
   padding-left: 30px;
 }
 
-.header-logo-txt {
+.header-logo-link:hover{
+  text-decoration: underline;
+}
+
+.header-logo-txt,
+.company-logo-txt {
   margin-left: 20px;
 }
 
@@ -86,11 +117,16 @@ p {
 .sns ul {
   display: flex;
   gap: 8px;
+  padding: 0;
 }
 
 .sns-item:last-child {
   border-right: 1px solid #707070;
   padding-right: 25px;
+}
+
+.sns-item:hover {
+  opacity: 0.7;
 }
 
 .header-nav ul {
@@ -110,13 +146,17 @@ p {
 }
 
 .header-nav-link.active {
-  border-color: #333333;
+  border-color: #33CB33;
+  color: #33CB33;
 }
+
+/*slide*/
 
 .slide ul {
   overflow-x: scroll;
   display: flex;
-  padding-bottom: 64px;
+  padding: 0 0 64px;
+  gap: 56px;
 }
 
 .slide li {
@@ -130,25 +170,100 @@ p {
   object-fit: cover;
 }
 
+.slide-title{
+
+  margin-bottom: 10px;
+}
+
+.slide-txt{
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/*follow*/
+
 .follow a {
   padding: 10px 28px;
-  color: white;
+  color: #45A036;
   margin-left: 27px;
-  background-color: #333333;
-  border-radius: 20px;
+  border: 3px solid #45A036;
+  border-radius: 5px;
   display: inline-block;
 }
+
+.follow a:hover {
+  background-color: #45A036;
+  color: white;
+}
+
+.follow a::before {
+  content: "ï";
+  padding-right: 16px;
+}
+
+
+
+/*mv*/
 
 .mv {
   text-align: center;
   margin-bottom: 59px;
 }
 
+/*新着プレスリリース、コラム*/
+
+.news {
+  margin-bottom: 71px;
+}
+
+.new::before{
+content:url(img/新着プレスリリース.png) ;
+padding-right: 16px;
+
+}
+
+.news-list {
+  padding: 0;
+}
+
 .news-item {
   border-top: 1px solid #707070;
-  padding: 20px 0;
+  padding: 19px;
+}
+
+.img-txt{
+  flex-direction: column
+}
+
+.news-item:last-child {
+  border-bottom: 1px solid #707070;
 }
 
 .news-item a {
   display: flex;
+}
+
+/*採用情報*/
+
+.coffee {
+  margin: 0;
+}
+
+/*会社情報*/
+
+.company-title {
+  margin-bottom: 39px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-data{
+  width: 50%;
+}
+
+.map{
+  width: 50%;
 }
