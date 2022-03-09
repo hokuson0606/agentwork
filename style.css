@@ -376,6 +376,9 @@ td {
   display: block;
   min-width: 312px;
 }
+.swiper-slide {
+  width: 30%;
+}
 
 @media screen and (max-width: 450px) {
   .sp-header {
