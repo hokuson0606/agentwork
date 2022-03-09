@@ -27,7 +27,7 @@ a {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
@@ -381,6 +381,36 @@ td {
 }
 
 @media screen and (max-width: 450px) {
+  a {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Noto Sans JP;
+    text-decoration: none;
+    color: #707070;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-weight: bold;
+    color: #707070;
+  }
+
+  p {
+    font-family: Noto Sans JP;
+    font-size: 10px;
+    color: #707070;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
   .sp-header {
     width: 100%;
     position: fixed;
@@ -395,31 +425,55 @@ td {
   .sp-header-img {
     background-size: cover;
     align-self: flex-start;
-    padding-top: 35px;
+    padding-top: 25px;
   }
 
   /*header*/
 
   .header {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 
   .header-nav ul {
     padding: 0;
+    white-space: nowrap;
+    overflow: scroll;
+  }
+
+  .header-nav-item {
+    width: 40%;
+  }
+
+  /*mv*/
+  .mv {
+    width: 100%;
+  }
+
+  .mv-image {
+    height: 250px;
   }
 
   .value {
     color: #00b900;
   }
 
-  .sp {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
+  }
+
+  .header-nav-link {
+    font-size: 1vw;
+    border-top: 1px solid #d2d2d2;
+    text-align: center;
+    display: block;
+    padding-top: 24px;
   }
 
   .openbtn6 {
     position: relative; /*ボタン内側の基点となるためrelativeを指定*/
     cursor: pointer;
-    width: 100px;
+    width: 50px;
     height: 50px;
     border-radius: 5px;
   }
@@ -480,16 +534,18 @@ td {
     text-decoration: none;
   }
 
+  /*news*/
+
+  .news-item {
+    padding: 10px;
+  }
+
   .news-item a {
     align-items: center;
   }
 
   .news-image {
-    width: 35.3%;
-  }
-
-  .container {
-    width: 100%;
+    width: 30%;
   }
 
   .btn-block {
@@ -504,10 +560,6 @@ td {
   }
 
   .company-data {
-    width: 100%;
-  }
-
-  .mv {
     width: 100%;
   }
 
@@ -528,5 +580,12 @@ td {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+  }
+
+  .sp {
+    display: none;
+  }
+  iframe {
+    height: 300px;
   }
 }
