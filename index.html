@@ -15,18 +15,26 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script src="js/jquery-2.2.4.min.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/script.js" defer></script>
   </head>
   <body>
+    <div class="sp-header">
+      <div class="openbtn6"><span></span><span></span><span></span></div>
+      <h1><span class="value">value</span>press</h1>
+      <img
+        class="sp-header-img"
+        src="img/検索用の虫眼鏡アイコン 7.png"
+        alt=""
+      />
+    </div>
     <header class="container header">
-      <div class="sp-header">
-        <div class="openbtn6"><span></span><span></span><span></span></div>
-        <h1> <span class="value">value</span>press</h1>
-        <img src="img/検索用の虫眼鏡アイコン 7.png" alt="">
-      </div>
-      
       <div class="header-title">
         <div class="header-logo">
           <img class="header-logo-img" src="img/ドトール.png" alt="" />
@@ -49,7 +57,9 @@
               <a href=""><img src="img/Twitter.png" alt="" /></a>
             </li>
             <li class="sns-item">
-              <a href=""><img src="img/Instagram_Glyph_Gradient_RGB.png" alt="" /></a>
+              <a href=""
+                ><img src="img/Instagram_Glyph_Gradient_RGB.png" alt=""
+              /></a>
             </li>
             <li class="sns-item">
               <a href=""><img src="img/line.png" alt="" /></a>
@@ -93,10 +103,9 @@
       </section>
     </header>
     <main>
-      <div class="container">
       <section class="mv">
+        <img src="./img/mv.png" alt="" class="mv-image" />
       </section>
-    </div>
       <section class="news container">
         <div class="title">
           <h2 class="contents-title new">新着プレスリリース</h2>
@@ -104,55 +113,54 @@
         </div>
         <ul class="news-list">
           <li class="news-item">
-            <a href=""
-              > 
-                <img src="img/画像 3.png" alt="" />
-                <div class="img-txt">
+            <a href="">
+              <img src="img/画像 3.png" alt="" class="news-image" />
+              <div class="img-txt">
                 <p>
                   レモネード×炭酸ドリンクと爽やかなミラノサンド　
                   ドトールコーヒーショップで7月16日より発売レモネード×炭酸ドリンクと爽やかなミラノサンド　
                   ドトールコーヒーショップで7月16日より発売
                 </p>
-              
-              <p class="date">2020年7月2日 11時</p>
-            </div></a
+
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
+            >
+          </li>
+          <li class="news-item">
+            <a href=""
+              ><img src="img/画像 3.png" alt="" class="news-image" />
+              <div class="img-txt">
+                <p>
+                  レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売
+                </p>
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
+            >
+          </li>
+          <li class="news-item">
+            <a href=""
+              ><img src="img/画像 3.png" alt="" class="news-image" />
+              <div class="img-txt">
+                <p>
+                  レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売
+                </p>
+
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
             >
           </li>
           <li class="news-item">
             <a href=""
               ><img src="img/画像 3.png" alt="" />
               <div class="img-txt">
-              <p>
-                レモネード×炭酸ドリンクと爽やかなミラノサンド　
-                ドトールコーヒーショップで7月16日より発売
-                
-              </p>
-              <p class="date">2020年7月2日 11時</p>
-            </div></a
-            >
-          </li>
-          <li class="news-item">
-            <a href=""
-              ><img src="img/画像 3.png" alt="" />
-              <div class="img-txt">
-              <p>
-                レモネード×炭酸ドリンクと爽やかなミラノサンド　
-                ドトールコーヒーショップで7月16日より発売
-                
-              </p>
-            
-              <p class="date">2020年7月2日 11時</p></div></a
-            >
-          </li>
-          <li class="news-item">
-            <a href=""
-              ><img src="img/画像 3.png" alt="" />
-              <div class="img-txt">
-              <p>
-                レモネード×炭酸ドリンクと爽やかなミラノサンド　
-                ドトールコーヒーショップで7月16日より発売
-              </p>
-              <p class="date">2020年7月2日 11時</p></div></a
+                <p>
+                  レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売
+                </p>
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
             >
           </li>
         </ul>
@@ -162,29 +170,60 @@
           <h2 class="contents-title recruit">採用情報</h2>
           <a class="list" href="">一覧はこちら</a>
         </div>
-        <ul>
-          <li>
-            <a href=""
-              ><img class="slide-img js-no-image" src="img/採用情報img.png" alt="" />
-              <p class="slide-title">Webデザイナー</p
-            ><p class="slide-txt" >企業の魅力を最大化する。webデザイナー募集！</p
-              ></a>
-          </li>
-          <li>
-            <a href=""
-              ><img class="slide-img js-no-image" src="" alt="" />
-              <p class="slide-title">Webデザイナー</p
-                ><p class="slide-txt">企業の魅力を最大化する。webデザイナー募集！</p
-                  ></a>
-          </li>
-          <li>
-            <a href=""
-              ><img class="slide-img js-no-image" src="img/採用情報img.png" alt="" />
-              <p class="slide-title">Webデザイナー</p
-                ><p class="slide-txt">企業の魅力を最大化する。webデザイナー募集！</p
-                  ></a>
-          </li>
-        </ul>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <ul class="swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide">
+              <a href="">
+                <img
+                  class="slide-img js-no-image"
+                  src="img/採用情報img.png"
+                  alt=""
+                />
+                <p class="slide-title">Webデザイナー</p>
+                <p class="slide-txt">
+                  企業の魅力を最大化する。webデザイナー募集！
+                </p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img
+                  class="slide-img js-no-image"
+                  src="img/Noimage.png"
+                  alt=""
+                />
+                <p class="slide-title">Webデザイナー</p>
+                <p class="slide-txt">
+                  企業の魅力を最大化する。webデザイナー募集！
+                </p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="">
+                <img
+                  class="slide-img js-no-image"
+                  src="img/採用情報img.png"
+                  alt=""
+                />
+                <p class="slide-title">Webデザイナー</p>
+                <p class="slide-txt">
+                  企業の魅力を最大化する。webデザイナー募集！
+                </p>
+              </a>
+            </li>
+          </ul>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">前へ</div>
+          <div class="swiper-button-next">次へ</div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
       </section>
       <section class="news container">
         <div class="title">
@@ -196,35 +235,37 @@
             <a href=""
               ><img src="img/画像 3.png" alt="" />
               <div class="img-txt">
-              <p>
-                レモネード×炭酸ドリンクと爽やかなミラノサンド　 ドトールコーヒーショップで7月16日より発売レモネード×炭酸ドリンクと爽やかなミラノサンド　 ドトールコーヒーショップで7月16日より発売
-                
-              </p>
-              <p class="date">2020年7月2日 11時</p></div></a
+                <p>
+                  レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売
+                </p>
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
             >
           </li>
           <li class="news-item">
             <a href=""
               ><img src="img/画像 3.png" alt="" />
               <div class="img-txt">
-              <p>
-                レモネード×炭酸ドリンクと爽やかなミラノサンド　
-                ドトールコーヒーショップで7月16日より発売
-                
-              </p>
-              <p class="date">2020年7月2日 11時</p></div></a
+                <p>
+                  レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売
+                </p>
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
             >
           </li>
           <li class="news-item">
             <a href=""
               ><img src="img/画像 3.png" alt="" />
               <div class="img-txt">
-              <p>
-                レモネード×炭酸ドリンクと爽やかなミラノサンド　
-                ドトールコーヒーショップで7月16日より発売
-                
-              </p>
-              <p class="date">2020年7月2日 11時</p></div></a
+                <p>
+                  レモネード×炭酸ドリンクと爽やかなミラノサンド　
+                  ドトールコーヒーショップで7月16日より発売
+                </p>
+                <p class="date">2020年7月2日 11時</p>
+              </div></a
             >
           </li>
         </ul>
@@ -242,28 +283,30 @@
                 <div class="sns">
                   <ul class="coffee">
                     <li class="sns-item">
-              <a href=""><img src="img/footer.png" alt="" /></a>
-            </li>
-            <li class="sns-item">
-              <a href=""><img src="img/facebook.png" alt="" /></a>
-            </li>
-            <li class="sns-item">
-              <a href=""><img src="img/Twitter.png" alt="" /></a>
-            </li>
-            <li class="sns-item">
-              <a href=""><img src="img/Instagram_Glyph_Gradient_RGB.png" alt="" /></a>
-            </li>
-            <li class="sns-item">
-              <a href=""><img src="img/line.png" alt="" /></a>
-            </li>
-            <li class="sns-item">
-              <a href=""><img src="img/B!.png" alt="" /></a>
-            </li>
-            <li class="sns-item">
-              <a href=""><img src="img/icon_note.png" alt="" /></a>
-            </li>
+                      <a href=""><img src="img/footer.png" alt="" /></a>
+                    </li>
+                    <li class="sns-item">
+                      <a href=""><img src="img/facebook.png" alt="" /></a>
+                    </li>
+                    <li class="sns-item">
+                      <a href=""><img src="img/Twitter.png" alt="" /></a>
+                    </li>
+                    <li class="sns-item">
+                      <a href=""
+                        ><img src="img/Instagram_Glyph_Gradient_RGB.png" alt=""
+                      /></a>
+                    </li>
+                    <li class="sns-item">
+                      <a href=""><img src="img/line.png" alt="" /></a>
+                    </li>
+                    <li class="sns-item">
+                      <a href=""><img src="img/B!.png" alt="" /></a>
+                    </li>
+                    <li class="sns-item">
+                      <a href=""><img src="img/icon_note.png" alt="" /></a>
+                    </li>
                   </ul>
-                  <div class="follow">
+                  <div class="follow follow-sp">
                     <a href="">フォロー</a>
                   </div>
                 </div>
@@ -272,75 +315,100 @@
           </div>
           <table>
             <tbody>
-                <tr>
-                    <th>住所：</th>
-                    <td>東京都港区六本木6-10-1 六本木ヒルズ森タワー18F</td>
-                    
-                </tr>
-                 <tr>
-                    <th>URL：</th>
-                    <td>http://www.doutor.co.jp/</td>
-                    
-                </tr>
-                 <tr>
-                    <th>代表者：</th>
-                    <td>遠藤　雅信</td>
-                    
-                </tr>
-                <tr>
-                    <th>業種：</th>
-                    <td>商社・流通業</td>
-        
-                </tr>
-                <tr>
-                    <th>事業内容：</th>
-                    <td>家電、インテリア、アウトドア、生活雑貨等のプライベートブランドSunRuck(サンルック)、カー用品のMotionTech(モーションテック)、アウトドアブランドのLandField(ランドフィールド)を展開中。</td>
-                </tr>
+              <tr>
+                <th>住所：</th>
+                <td>東京都港区六本木6-10-1 六本木ヒルズ森タワー18F</td>
+              </tr>
+              <tr>
+                <th>URL：</th>
+                <td>http://www.doutor.co.jp/</td>
+              </tr>
+              <tr>
+                <th>代表者：</th>
+                <td>遠藤　雅信</td>
+              </tr>
+              <tr>
+                <th>業種：</th>
+                <td>商社・流通業</td>
+              </tr>
+              <tr>
+                <th>事業内容：</th>
+                <td>
+                  家電、インテリア、アウトドア、生活雑貨等のプライベートブランドSunRuck(サンルック)、カー用品のMotionTech(モーションテック)、アウトドアブランドのLandField(ランドフィールド)を展開中。
+                </td>
+              </tr>
             </tbody>
-        </table>
+          </table>
         </div>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.670603019301!2d139.72745296525824!3d35.6604864301992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b828453ffff%3A0xb8603beeb9b150d8!2z5YWt5pys5pyo44OS44Or44K6IOajruOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1646662479952!5m2!1sja!2sjp" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.670603019301!2d139.72745296525824!3d35.6604864301992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b828453ffff%3A0xb8603beeb9b150d8!2z5YWt5pys5pyo44OS44Or44K6IOajruOCv-ODr-ODvA!5e0!3m2!1sja!2sjp!4v1646662479952!5m2!1sja!2sjp"
+          width="500"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
       </section>
       <section class="any-company">
         <div class="container">
-        <div class="title">
-          <h2 class="contents-title ">同業種の企業</h2>
-          <a class="list" href="">一覧はこちら</a>
+          <div class="title">
+            <h2 class="contents-title">同業種の企業</h2>
+            <a class="list" href="">一覧はこちら</a>
+          </div>
+          <ul class="container">
+            <li class="any-company-list">
+              <a href=""
+                ><img
+                  class="slide-img any-company-img js-no-image"
+                  src="img/sony.png"
+                  alt=""
+                />
+                <p class="slide-txt">ソニーペイメントサービス株式会社</p></a
+              >
+            </li>
+            <li class="any-company-list">
+              <a href=""
+                ><img
+                  class="slide-img any-company-img js-no-image"
+                  src="img/Noimage.png"
+                  alt=""
+                />
+                <p class="slide-txt">ブリヂストンサイクル株式会社</p></a
+              >
+            </li>
+            <li class="any-company-list">
+              <a href=""
+                ><img
+                  class="slide-img any-company-img js-no-image"
+                  src="img/ソントン.png"
+                  alt=""
+                />
+                <p class="slide-txt">ソントン株式会社</p></a
+              >
+            </li>
+            <li class="any-company-list">
+              <a href=""
+                ><img
+                  class="slide-img any-company-img js-no-image"
+                  src="img/海洋堂.png"
+                  alt=""
+                />
+                <p class="slide-txt">株式会社海洋堂</p></a
+              >
+            </li>
+            <li class="any-company-list">
+              <a href=""
+                ><img
+                  class="slide-img any-company-img js-no-image"
+                  src="img/採用情報img.png"
+                  alt=""
+                />
+                <p class="slide-txt">株式会社JAPANNEXT</p></a
+              >
+            </li>
+          </ul>
         </div>
-        <ul class="container">
-          <li class="any-company-list">
-            <a href=""
-              ><img class="slide-img any-company-img js-no-image" src="img/sony.png" alt="" />
-            <p class="slide-txt" >ソニーペイメントサービス株式会社</p
-              ></a>
-          </li>
-          <li class="any-company-list">
-            <a href=""
-              ><img class="slide-img any-company-img js-no-image" src="" alt="" />
-                <p class="slide-txt">ブリヂストンサイクル株式会社</p
-                  ></a>
-          </li>
-          <li class="any-company-list">
-            <a href=""
-              ><img class="slide-img any-company-img js-no-image" src="img/ソントン.png" alt="" />
-                <p class="slide-txt">ソントン株式会社</p
-                  ></a>
-          </li>
-          <li class="any-company-list">
-            <a href=""
-              ><img class="slide-img any-company-img js-no-image" src="img/海洋堂.png" alt="" />
-                <p class="slide-txt">株式会社海洋堂</p
-                  ></a>
-          </li>
-          <li class="any-company-list">
-            <a href=""
-              ><img class="slide-img any-company-img js-no-image" src="img/採用情報img.png" alt="" />
-                <p class="slide-txt">株式会社JAPANNEXT</p
-                  ></a>
-          </li>
-         
-        </ul>
-      </div>
       </section>
     </main>
   </body>
