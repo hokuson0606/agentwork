@@ -13,6 +13,10 @@ li {
   list-style: none;
 }
 
+td {
+  line-height: 1.5;
+}
+
 img {
   max-width: 100%;
 }
@@ -24,6 +28,10 @@ a {
   text-decoration: none;
   color: #707070;
   cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
@@ -56,6 +64,10 @@ p {
 
 .list {
   display: flex;
+}
+
+.sp-list {
+  display: none;
 }
 
 .list:hover {
@@ -140,6 +152,7 @@ p {
   display: flex;
   width: 80%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .header-nav-item {
@@ -161,16 +174,12 @@ p {
 
 /*slide*/
 
-/* .slide ul {
-  overflow-x: scroll;
-  display: flex;
-  padding: 0 0 64px;
-  gap: 56px;
-} */
+.slide {
+  margin-bottom: 71px;
+}
 
-.slide li {
-  /* display: block;
-  min-width: 512px; */
+.swiper-pagination-bullet {
+  display: none;
 }
 
 .swiper-scrollbar-drag {
@@ -184,14 +193,16 @@ p {
 
 .swiper-wrapper {
   padding: 0;
+  overflow-x: scroll;
 }
 
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 400px;
 }
 
 .swiper2 {
+  position: relative;
   width: 100%;
   height: 200px;
 }
@@ -234,14 +245,14 @@ p {
 }
 
 .slide-txt {
-  margin-top: 0;
+  margin-top: 5px;
   font-weight: normal;
 }
 
 /*follow*/
 
 .follow a {
-  padding: 10px 25px;
+  padding: 8px 30px;
   color: #45a036;
   margin-left: 27px;
   border: 3px solid #45a036;
@@ -262,9 +273,13 @@ p {
 /*mv*/
 
 .mv {
-  width: 1080px;
   margin: 0 auto;
   margin-bottom: 59px;
+  text-align: center;
+}
+
+.mv-image {
+  width: 80%;
 }
 
 /*新着プレスリリース、コラム*/
@@ -374,8 +389,6 @@ td {
 }
 
 .any-company-img {
-  width: 312px;
-  height: 169px;
   object-fit: cover;
 }
 
@@ -418,6 +431,18 @@ td {
     width: 100%;
     padding: 0 20px;
   }
+
+  .list {
+    position: absolute;
+    bottom: 95px;
+    left: 65%;
+    display: flex;
+  }
+
+  .title {
+    position: relative;
+  }
+
   .sp-header {
     width: 100%;
     position: fixed;
@@ -442,22 +467,34 @@ td {
   }
 
   .header-nav ul {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 0;
-    white-space: nowrap;
     overflow-x: scroll;
+    white-space: nowrap;
   }
 
   .header-nav-item {
     width: 20%;
   }
 
+  .header-nav-link {
+    font-size: 12px;
+    border-top: 1px solid #d2d2d2;
+    text-align: center;
+    padding: 24px 20px 0;
+    align-items: center;
+  }
+
   /*mv*/
   .mv {
     width: 100%;
+    margin-bottom: 71px;
   }
 
   .mv-image {
+    width: 100%;
     height: 250px;
     background-size: cover;
   }
@@ -469,14 +506,6 @@ td {
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
-  }
-
-  .header-nav-link {
-    font-size: 1vw;
-    border-top: 1px solid #d2d2d2;
-    text-align: center;
-    display: block;
-    padding-top: 24px;
   }
 
   .openbtn6 {
@@ -591,6 +620,14 @@ td {
     flex-wrap: wrap;
   }
 
+  .txt {
+    margin: 0;
+  }
+
+  .date {
+    margin: 26px 0 0;
+  }
+
   .sp {
     display: none;
   }
@@ -598,15 +635,24 @@ td {
     height: 300px;
   }
 
-  .swiper,
-  .swiper2 {
+  .swiper {
     width: 100%;
     height: 200px;
+  }
+
+  .swiper2 {
+    width: 100%;
+    height: 150px;
   }
 
   .any-company-img {
     width: 312px;
     height: auto;
     object-fit: cover;
+  }
+
+  .follow-sp a {
+    padding: 8px 40px;
+    margin: 10px 0 0;
   }
 }
